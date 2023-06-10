@@ -1,0 +1,7 @@
+// 本文件中的json内容将在云函数【运行】时作为参数传给云函数。
+// 配置教程参考：https://uniapp.dcloud.net.cn/uniCloud/rundebug.html#runparam
+{
+	"userid":"6464a8abe766bb00857cc77d",
+	"articleid":"6464a8aaf5cf3a2df461bc80",
+	"content":"测试"
+}

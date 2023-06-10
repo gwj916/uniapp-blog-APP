@@ -1,0 +1,105 @@
+.self-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(165, 165, 165, 0.1);
+    @include flex(flex-start, column);
+    align-items: baseline;
+
+    .self-container-data {
+        width: 100%;
+
+        .self-head {
+            margin: 50rpx 0;
+            width: 100%;
+
+            .self-head-top {
+                @include flex(flex-start, column);
+
+                .self-head-top-img {
+                    width: 100rpx;
+                    height: 100rpx;
+                    border-radius: 50rpx;
+                }
+
+                .self-head-top-title {
+                    font-size: 28rpx;
+                    margin-top: 20rpx;
+                }
+            }
+
+            .self-head-bottom {
+                margin-top: 30rpx;
+                @include flex(space-around);
+
+                .self-head-bottom-title {
+                    text-align: center;
+                }
+
+                .self-head-bottom-number {
+                    margin-top: 10rpx;
+                    text-align: center;
+                    color: #666;
+                }
+            }
+        }
+
+        .self-content {
+            width: 100%;
+            @include flex();
+            height: 90rpx;
+            background-color: white;
+            margin-bottom: 10rpx;
+
+            .self-content-left {
+                margin-left: 20rpx;
+
+                .self-content-left-title {
+                    margin-left: 10rpx;
+                }
+            }
+
+            .self-content-right {
+                margin-right: 20rpx;
+            }
+        }
+
+        .self-btn {
+            width: 100%;
+            margin-top: 50rpx;
+
+            .btn {
+                width: 97%;
+                background-color: $base-color;
+            }
+
+        }
+    }
+
+    .self-container-nodata {
+        width: 100%;
+
+        .self-content {
+            width: 100%;
+            @include flex();
+            height: 150rpx;
+            background-color: white;
+            margin-bottom: 10rpx;
+            .self-content-left {
+                @include flex();
+                margin-left: 20rpx;
+                .self-content-left-img{
+                    width: 100rpx;
+                    height: 100rpx;
+                }
+                .self-content-left-title {
+                    margin-left: 30rpx;
+                    font-size: 26rpx;
+                }
+            }
+
+            .self-content-right {
+                margin-right: 20rpx;
+            }
+        }
+    }
+}

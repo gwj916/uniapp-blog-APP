@@ -1,0 +1,60 @@
+.follow-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .follow-tab {
+        padding-bottom: 20rpx;
+        @include flex(center);
+
+        .text {
+            width: 40%;
+            height: 60rpx;
+            line-height: 60rpx;
+            border: 1rpx solid $base-color;
+            text-align: center;
+            margin-top: 20rpx;
+            font-weight: bold;
+            font-size: 25rpx;
+            color: #959494;
+
+            &.active {
+                color: $base-color;
+            }
+        }
+
+        .article {
+            @extend .text;
+            border-top-left-radius: 10rpx;
+            border-bottom-left-radius: 10rpx
+        }
+
+        .author {
+            @extend .text;
+            border-top-right-radius: 10rpx;
+            border-bottom-right-radius: 10rpx
+        }
+    }
+
+    .follow-swiper {
+        height: 100vh;
+        overflow: hidden;
+        flex: 1;
+        .swiper {
+            height: 90vh;
+
+            .nodata {
+                position: absolute;
+                top: 0;
+                height: 400rpx;
+                line-height: 400rpx;
+                width: 100%;
+                text-align: center;
+                font-size: 24rpx;
+                color: #666;
+            }
+        }
+    }
+}

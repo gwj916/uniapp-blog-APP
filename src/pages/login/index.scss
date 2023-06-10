@@ -1,0 +1,68 @@
+.login-container {
+    width: 100%;
+    background-color: #F8F8F8;
+    height: 100%;
+
+    .login-img {
+        width: 100%;
+        height: 450rpx;
+        object-fit: cover;
+    }
+
+    .Nav {
+        @include flex(space-around);
+        font-weight: bold;
+
+        .Nav-item {
+            position: relative;
+            padding-bottom: 40rpx;
+
+            &.active {
+                color: $base-color;
+
+                &:after {
+                    content: '';
+                    width: 60rpx;
+                    left: 50%;
+                    bottom: 20rpx;
+                    position: absolute;
+                    transform: translateX(-50%);
+                    height: 8rpx;
+                    border-radius: 4rpx;
+                    background-color: $base-color;
+                }
+            }
+        }
+    }
+
+    .login-form {
+        margin-top: 20rpx;
+
+        .input {
+            width: 97%;
+        }
+
+        .codeinput {
+            display: flex;
+            position: relative;
+            .code {
+                position: absolute;
+                top: 8rpx;
+                right: -200rpx;
+                width: 100%;
+            }
+        }
+
+        .login-btn {
+            width: 70%;
+            background-color: $base-color;
+            font-size: 35rpx
+        }
+    }
+
+    .footer {
+        @include flex(space-around);
+        padding: 25rpx 0 30rpx;
+        font-size: 20rpx;
+    }
+}

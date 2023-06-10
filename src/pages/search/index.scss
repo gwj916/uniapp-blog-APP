@@ -1,0 +1,51 @@
+.search-container {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .search-conent {
+        margin-bottom: 20rpx;
+
+        .search-history-head {
+            @include flex();
+            font-size: 28rpx;
+            padding: 20rpx 20rpx;
+            border-bottom: 1px solid #ccc;
+            font-weight: bold;
+
+            .history {
+                color: $base-color;
+            }
+
+            .clear {
+                color: darkseagreen;
+            }
+        }
+
+        .search-history-container {
+            @include flex(flex-start, row, wrap);
+            padding: 0 30rpx 30rpx 30rpx;
+
+            .search-list-content {
+                padding: 4rpx 20rpx;
+                margin-top: 24rpx;
+                margin-right: 20rpx;
+                border-radius: 10rpx;
+                border: 1px solid #666;
+                font-size: 28rpx;
+                color: #666;
+            }
+        }
+
+    }
+
+    .nodata {
+        height: 400rpx;
+        line-height: 400rpx;
+        width: 100%;
+        text-align: center;
+        font-size: 24rpx;
+        color: #666;
+    }
+}
