@@ -11,12 +11,14 @@
 
 ## 使用 Uniapp + uni-ui + UnCloud云开发 + Vue3 + Typescript + Vuex4.0
 
-#### 安装依赖包
-```
-npm install
-```
+## 快速运行
+1、下载并安装：集成开发环境 HBuilderX （推荐，也可以使用 VSCode 或 WebStorm）
 
-#### 运行
-```
-npm run serve
-```
+2、菜单：文件 -> 导入 -> 从本地目录导入，选择文件夹。
+
+3、其余依赖包需要安装 命令行运行 npm install
+
+4、菜单：运行 -> 运行到内置浏览器（或运行到浏览器 -> Chrome 浏览器）。
+
+5、等待 HBuliderX 控制台编译完成后，会自动弹出手机登录页面。
+
